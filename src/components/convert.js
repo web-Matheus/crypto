@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Exchange from './exchange'
+import MonthlyCurrency from './monthlyCurrency';
 import axios from 'axios';
 const Convert = () => {
   const currencies = ['BTC','ETH','USD','XRP','LTC','ADA','JPY'];
@@ -90,6 +91,8 @@ const Convert = () => {
       chosenPrimaryCurrency={chosenPrimaryCurrency}
       chosenSecondyCurrency={chosenSecondyCurrency}
       />
+
+      <MonthlyCurrency/>
     </div>
   )
 }
